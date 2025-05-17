@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B');
+:root{
+    --primary:#e7eaf6;
+    --second:#78bbe6;
+    --dark:#113f67;
+    --trans: 0.5s ease;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins',sans-serif;
+}
+html{
+    font-size: 70.5%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x:hidden ;
+    background-color: var(--primary);
+    color:var(--dark);
+}
+header{
+    margin-top: 3%;
+    position: relative;
+    width: 80%;
+    padding:1rem 10%;
+    background-color: transparent;
+    filter: drop-shadow(50px);
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    z-index: 100;
+    justify-content: space-between;
+}
+
+/*============================header=======================*/
+.tung{
+    text-transform: uppercase;
+    color: var(--dark);
+    align-self: start;
+    font-size: medium;
+    transition: var(--trans);
+}
+.tung:hover{
+    transform: scale(1.1);
+    color: var(--second);
+}
+
+.Home,.About,.Services,.Projects,.Contacts{
+    font-size: small;
+    color: var(--dark);
+    font-weight: 500;
+    transition: var(--trans);
+    border-bottom: 3% solid ;
+}
+
+header a:hover
+{
+    transform: scale(1.1); 
+    color: var(--second);
+}
+ .logo{
+    display: flex;
+    align-items: center;  
+  } 
+    .logo img {
+        position: absolute;
+        margin-left: -5%;
+        height: 50px;
+        width: auto;
+    }
+/*===================================================maincontent==============================================*/
+.content{
+margin-top: 15%;
+}
+
+section{
+    min-height: 100%;
+    padding: 5%,9%,5%;
+}
+.bahay{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    gap: 8%;
+}
+span{
+    color: var(--second);
+}
+.content h1{
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 500%;
+}
+.content h2{
+    font-size: 400%;
+    font-weight: 700;
+    margin-bottom: 1%;
+}
+/*=============================================PICTUREEEE==================================*/
+.pic{
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 50%;
+}
+.picture{
+animation: fadeIn 0.5s ease-in;
+position: relative;
+width: 32vw;
+border-radius: 50%;
+box-shadow: 5 5 5px solid  var(--dark);
+cursor: pointer;
+transition: 0.2s linear;
+}
+.picture:hover{
+    font-size: 1.8;
+    font-weight: 800;
+}
+/*===================================ICONSSSSSSS===============================*/
+.icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid var(--dark);
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 1rem 1.5rem 1rem;
+    transition: var(--trans);
+    color: var(--dark);
+}
+.icons :hover{
+    transform: scale(1.5) translateY(-5%);
+    background-color: var(--primary);
+    box-shadow: 0 0 25px   var(--dark);
+}
+/*======================================CVVVVVVV===============================*/
+.cv{
+    color: var(--primary);
+    display: inline-block;
+    padding: 1rem 3%;
+    background-color: var(--dark);
+    font: size 1.6rem; 
+    letter-spacing: 0.3rem;
+    border: 2px solid var(--primary);
+    font-weight: 600;
+    transition: var(--trans);
+    border-radius: 40rem;
+    cursor: pointer;
+
+}
+.cv:hover{
+        transform: scale(1.1);
+        background-color: var(--second);
+        color: var(--dark);
+        box-shadow: 0 0 25px var(--dark);
+}
+
+/*=================================================TYPINGSS STYLE=============================*/
+.type{
+    font-size: 34px;
+    font-weight: 600;
+    min-width:280px; 
+}
+.type span{
+    position: relative;
+}
+.type span::before{
+    content: "Editor";
+    color: var(--dark);
+    animation: words 20s infinite;
+}
+.type span::after{
+    content: "";
+    background-color: var(--primary);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--primary);
+    right:-8;
+    animation: cursor 0.3s infinite;
+}
+@keyframes cursor {
+    to{
+        border-left: 3px solid var(--dark);
+    }
+}
+@keyframes words{
+    0%, 25%{
+        content:"Web Designer";
+    }
+    26%,50%{
+        content: "Multi-Media Editor";
+    }
+    51%, 75%{
+        content: "FrontEnd Developer";
+    }
+    76%,100%{
+        content: "Tambay";
+    }
+}
+
+/*=============================Ako ito===========================*/
+ .skills,.hobbies, .education, .fun-facts, .cta{ 
+max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--primary);
+    color: var(--dark);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.conab ul {
+    padding-left: 1.5rem;
+    line-height: 1.8;
+}
+
+.conab li{
+    margin-bottom: 0.5rem;
+}
+
+.skills,.hobbies, .education, .fun-facts, .cta,.aboutme{
+    background-color: var(--primary);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--second);
+}
+
+.conab h3 {
+    color: #3498db;
+    margin-top: 0;
+}
+.aboutme{
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--primary);
+    color: var(--dark);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+/* =================== kakayahan ko ================== */
+
+.skills {
+    width: 100%;
+}
+
+.skil {
+    margin-bottom: 1.5rem;
+}
+
+.skil p {
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+    color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+}
+
+.skil p span {
+    color: var(--dark);
+    font-weight: normal;
+}
+
+.dobolskil {
+    width: 100%;
+    height: 12px;
+    background-color: var(--primary);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.level {
+    height: 100%;
+    border-radius: 6px;
+    width: 0;
+    animation: fillSkill 2s forwards ease-in-out;
+}
+
+
+.python { background-color: #3776ab; }  
+.java   { background-color: #f89820; }  
+.html   { background-color: #e34c26; }  
+.media  { background-color: #9b59b6; }  
+
+@keyframes fillSkill {
+    to {
+        width: var(--target-width);
+    }
+}
+
+.skills {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.aboutme h2{
+    text-transform: uppercase;
+    font-size: 3em;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: .5rem;
+}
+
+.aboutme h2::after{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary);
+}
+.AMcontent h3{
+color: var(--dark);
+font-size: 1.5rem;
+margin: 1.5rem 0 0.8rem;
+}
+
+.AMcontent p i{
+    color: var(--dark);
+    font-style: italic;
+}
+
+.AMcontent p:first-of-type {
+    font-size: 1.1rem;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+}
+
+.AMcontent h3 b {
+    color: var(--dark);
+}
+@media (max-width: 768px) {
+    .aboutme {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .aboutme h2 {
+        font-size: 1.8rem;
+    }
+    
+    .AMcontent h3 {
+        font-size: 1.3rem;
+    }
+    
+    .AMcontent p {
+        font-size: 1rem;
+    }
+}
+/*=======================TAWAG KA==========================*/
+.container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: var(--dark);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container h1 {
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .contact-card {
+            animation: fadeIn 0.5s ease-in;
+            background: linear-gradient(135deg, #f5f7fa 0%, var(--primary) 100%);
+            padding: 20px;
+            border-radius: 8px;
+            transition: var(--trans), box-shadow 0.3s ease;
+            text-align: center;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+        
+        .contact-card h3 {
+            margin: 10px 0;
+            color: var(--dark);
+        }
+        
+        .contact-card p {
+            color: var(--dark);
+            margin-bottom: 15px;
+        }
+        
+        .contact-link {
+            display: inline-block;
+            padding: 8px 15px;
+            background-color: var(--dark);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .contact-link:hover {
+            background-color: var(--second);
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+/*======================pamatay na project============*/
+.prod {
+    max-width: 900px;
+    height: 570px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: var(--dark);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.prod h1 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.prog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.proc {
+    animation: fadeIn var(--trans);
+    background: linear-gradient(135deg, #f5f7fa 0%, var(--primary) 100%);
+    padding: 20px;
+    border-radius: 8px;
+    transition: var(--trans), box-shadow 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.proc:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.proi {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.proc h3 {
+    margin: 10px 0;
+    color: var(--dark);
+}
+
+.proc p {
+    color: var(--dark);
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.prol {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.prolnk {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: var(--dark);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 0.9rem;
+}
+
+.prolnk:hover {
+    background-color: var(--second);
+}
+
+.coming-soon {
+    opacity: 0.8;
+}
+
+.coming-soon .proi {
+    color: var(--dark);
+}
+
+.coming-soon .prolnk {
+    background-color: #666;
+    cursor: not-allowed;
+}
+
+.proimg-container {
+    height: 180px;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+.proimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.proc:hover .proimg {
+    transform: scale(1.05);
+}
+
+.proimg-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #e0e0e0 0%, #c0c0c0 100%);
+    color: #666;
+    font-weight: bold;
+}
+
+.coming-soon .proimg-placeholder {
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+}
+
+.proc {
+   
+    padding-bottom: 25px;}
+
+.proi {
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .prog {
+        grid-template-columns: 1fr;
+    }
+    
+    .prol {
+        flex-direction: column;
+        gap: 8px;}
+    }
+
+/*====================PAAA===================*/
+ .homefoot {
+    margin-top: 10rem;
+    background-color: var(--dark);
+    color: var(--primary);
+    padding: 2rem 0 1rem;
+  }
+  
+  .fcontent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+    
+  .ftab h3,
+  .fcontact h3 {
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .ftab a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.10rem;
+     color: var(--primary);
+  }
+  
+  
+  .ftab a:hover {
+    color: var(--second);
+  }
+  
+  .fcontact address {
+    font-style: normal;
+    color: var(--primary);
+  }
+  
+  .fcontact a {
+    color: var(--primary);
+  }
+  
+  .fcontact a:hover {
+    color: var(--primary);
+  }
+  
+  .copyright {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--primary);
+    font-size: 0.9rem;
+  }
+  
+
+

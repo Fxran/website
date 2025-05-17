@@ -1,0 +1,137 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: left;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #2c3e50;
+}
+
+header h1 {
+    margin: 0;
+    color: #0f2a46;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+header dt {
+    margin: 5px 0;
+    color: #555;
+    font-size: 12px;
+}
+
+
+section {
+    margin-bottom: 20px;
+    background-color: #4b151e42;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #0000001a
+}
+
+h3 {
+    color: #0f2a46;
+    margin-top: 0;
+    padding-bottom: px;
+    border-bottom: 1px solid #130303;
+    font-size: 20px;
+}
+
+h5 {
+    color: #0f2a46;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+.picko{
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    border:1px solid #000000;
+    object-fit: cover;
+    float: right;
+}
+.akoito{
+    text-align: left;
+}
+
+.wokwok li {
+    font-weight: bold;
+}
+
+.wokwok dd {
+    margin-left: 1;
+    font-style: italic;
+}
+
+.emelang li {
+    display: inline-block;
+    background-color: #5e3f447c;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.ayawkol li {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.dilitrue li {
+    margin-bottom: 10px;
+    padding-left: 15px;
+    position: relative;
+}
+.dikokilala li{
+    font-weight: bold;
+    margin-top: auto;
+}
+.dikokilala dd{
+margin-left: auto;
+margin: auto;
+}
+
+.decla{
+    text-align: center;
+}
+.app {
+   padding-top: 20px;
+   padding-right: 35px;
+    text-align: right;
+    
+}
+.app dd{
+    padding-right: 40px
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 24px;
+    }
+    
+    section {
+        padding: 15px;
+    }
+}
